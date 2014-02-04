@@ -9,7 +9,6 @@ include LibXML
 XML.default_line_numbers = true
 
 begin
-
   # get args
   schema_file = ARGV.shift or raise "schematron file required"
   instance_file = ARGV.shift or raise "instance doc file required"

@@ -2,12 +2,11 @@ require 'libxml'
 require 'libxslt'
 
 module Schematron
-
   include LibXML
   include LibXSLT
 
   # The location of the ISO schematron implemtation lives
-  ISO_IMPL_DIR = File.join File.dirname(__FILE__), "..", 'iso-schematron-xslt1'
+  ISO_IMPL_DIR = File.join File.dirname(__FILE__), '..', 'iso-schematron-xslt1'
 
   # The file names of the compilation stages
   ISO_FILES = [ 'iso_dsdl_include.xsl',
@@ -20,7 +19,6 @@ module Schematron
   }
 
   class Schema
-
     def initialize(doc)
       schema_doc = doc
 

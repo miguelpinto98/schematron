@@ -1,4 +1,4 @@
-require 'libxml'
+require 'xml/libxml'
 require 'libxslt'
 
 module Schematron
